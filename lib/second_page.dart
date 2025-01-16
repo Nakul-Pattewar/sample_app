@@ -49,6 +49,18 @@ class SecondRoute extends StatelessWidget {
             },
             child: const Text('sliver AppBar'),
           ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.of(context).pushNamed("/provider_page_1");
+            },
+            child: const Text('provider_page_1'),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.of(context).pushNamed("/provider_page_2");
+            },
+            child: const Text('provider_page_2'),
+          ),
         ]),
       ),
     );

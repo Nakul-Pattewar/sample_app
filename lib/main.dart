@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:sample_app/second_page.dart';
+import 'package:provider/provider.dart';
+import 'package:sample_app/list_provider.dart';
 import 'route_generator.dart';
 
 void main() {
@@ -12,7 +13,11 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (context) => NumbersListProvider())
+      ],
+      child : MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
@@ -25,6 +30,7 @@ class MyApp extends StatelessWidget {
       //   "/third": (_)=>SecondRoute(),
       // },
       onGenerateRoute: RouteGenerator.generateRoute,
+    ),
     );
   }
 }
