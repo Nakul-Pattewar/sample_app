@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sample_app/Constants/strings.dart';
 
 class Sliver extends StatelessWidget {
   const Sliver({super.key});
@@ -10,12 +11,12 @@ class Sliver extends StatelessWidget {
       body: CustomScrollView(
         slivers: [
           SliverAppBar(
-            title: Text('Sliver App Bar'),
+            title: Text(sliverAppBarTitle),
             expandedHeight: 300,
             flexibleSpace: FlexibleSpaceBar(
               background: Container(
                 color: Colors.deepPurple[300],
-                child: Center(child : Text('Background')),
+                child: Center(child: Text(sliverAppBarBackgroundText)),
               ),
             ),
             floating: true,
@@ -28,86 +29,94 @@ class Sliver extends StatelessWidget {
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(15),
                 child: Container(
-                color: Colors.deepOrange[300],
-                height: 200,
-              ),)
+                  color: Colors.deepOrange[300],
+                  height: 200,
+                ),
+              ),
             ),
           ),
           SliverToBoxAdapter(
             child: Padding(
-                padding: const EdgeInsets.all(15),
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(15),
-                  child: Container(
-                    color: Colors.deepOrange[300],
-                    height: 200,
-                  ),)
+              padding: const EdgeInsets.all(15),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(15),
+                child: Container(
+                  color: Colors.deepOrange[300],
+                  height: 200,
+                ),
+              ),
             ),
           ),
           SliverToBoxAdapter(
             child: Padding(
-                padding: const EdgeInsets.all(15),
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(15),
-                  child: Container(
-                    color: Colors.deepOrange[300],
-                    height: 200,
-                  ),)
+              padding: const EdgeInsets.all(15),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(15),
+                child: Container(
+                  color: Colors.deepOrange[300],
+                  height: 200,
+                ),
+              ),
             ),
           ),
           SliverToBoxAdapter(
             child: Padding(
-                padding: const EdgeInsets.all(15),
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(15),
-                  child: Container(
-                    color: Colors.deepOrange[300],
-                    height: 200,
-                  ),)
+              padding: const EdgeInsets.all(15),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(15),
+                child: Container(
+                  color: Colors.deepOrange[300],
+                  height: 200,
+                ),
+              ),
             ),
           ),
           SliverToBoxAdapter(
             child: Padding(
-                padding: const EdgeInsets.all(15),
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(15),
-                  child: Container(
-                    color: Colors.deepOrange[300],
-                    height: 200,
-                  ),)
+              padding: const EdgeInsets.all(15),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(15),
+                child: Container(
+                  color: Colors.deepOrange[300],
+                  height: 200,
+                ),
+              ),
             ),
           ),
           SliverToBoxAdapter(
             child: Padding(
-                padding: const EdgeInsets.all(15),
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(15),
-                  child: Container(
-                    color: Colors.deepOrange[300],
-                    height: 200,
-                  ),)
+              padding: const EdgeInsets.all(15),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(15),
+                child: Container(
+                  color: Colors.deepOrange[300],
+                  height: 200,
+                ),
+              ),
             ),
           ),
           SliverToBoxAdapter(
             child: Padding(
-                padding: const EdgeInsets.all(15),
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(15),
-                  child: Container(
-                    color: Colors.deepOrange[300],
-                    height: 200,
-                  ),)
+              padding: const EdgeInsets.all(15),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(15),
+                child: Container(
+                  color: Colors.deepOrange[300],
+                  height: 200,
+                ),
+              ),
             ),
           ),
           SliverToBoxAdapter(
             child: Padding(
-                padding: const EdgeInsets.all(15),
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(15),
-                  child: Container(
-                    color: Colors.deepOrange[300],
-                    height: 200,
-                  ),)
+              padding: const EdgeInsets.all(15),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(15),
+                child: Container(
+                  color: Colors.deepOrange[300],
+                  height: 200,
+                ),
+              ),
             ),
           ),
         ],

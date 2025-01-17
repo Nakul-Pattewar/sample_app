@@ -1,29 +1,41 @@
 import 'package:flutter/material.dart';
-import 'package:sample_app/provider_page_1.dart';
+import 'package:sample_app/Constants/strings.dart';
+import 'package:sample_app/Provider/numbers_list_page_1.dart';
 import 'package:sample_app/main.dart';
-import 'package:sample_app/second_page.dart';
-import 'package:sample_app/SliverAppBar.dart';
+import 'package:sample_app/Widgets/second_page.dart';
+import 'package:sample_app/Widgets/SliverAppBar.dart';
 
-import 'provider_page_2.dart';
+import '../Provider/numbers_list_page_2.dart';
 
-class RouteGenerator{
-  static Route<dynamic> generateRoute(RouteSettings settings){
+class RouteGenerator {
+  static Route<dynamic> generateRoute(RouteSettings settings) {
     final args = settings.arguments;
-    switch(settings.name){
-      case'/':
-        if(args is String) {
+    switch (settings.name) {
+      case '/':
+        if (args is String) {
           return MaterialPageRoute(
-              builder: (_) => MyHomePage(title: args));
+            builder: (_) => MyHomePage(title: args),
+          );
         }
-        return MaterialPageRoute(builder: (_) => MyHomePage(title: "Kylas training"));
-      case'/second':
-        return MaterialPageRoute(builder: (_) => SecondRoute());
+        return MaterialPageRoute(
+          builder: (_) => MyHomePage(title: homePageTitle),
+        );
+      case '/second':
+        return MaterialPageRoute(
+          builder: (_) => SecondRoute(),
+        );
       case '/sliver':
-        return MaterialPageRoute(builder: (_) => Sliver());
-      case'/provider_page_1':
-        return MaterialPageRoute(builder: (_) => ProviderPage1());
+        return MaterialPageRoute(
+          builder: (_) => Sliver(),
+        );
+      case '/provider_page_1':
+        return MaterialPageRoute(
+          builder: (_) => NumbersListPage1(),
+        );
       case '/provider_page_2':
-        return MaterialPageRoute(builder: (_) => ProviderPage2());
+        return MaterialPageRoute(
+          builder: (_) => NumbersListPage2(),
+        );
       default:
         return _errorRoute();
     }
@@ -31,14 +43,15 @@ class RouteGenerator{
   }
 
   static Route<dynamic> _errorRoute() {
-    return MaterialPageRoute(builder: (_) => Scaffold(
+    return MaterialPageRoute(
+      builder: (_) => Scaffold(
         appBar: AppBar(
-          title: Text("Unknown Error")
+          title: Text(unknownErrorText),
         ),
         body: Center(
-          child: Text("Error"),
+          child: Text(unknownErrorData),
         ),
-    ),
+      ),
     );
   }
 }
