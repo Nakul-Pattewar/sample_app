@@ -23,11 +23,18 @@ class SecondRoute extends StatelessWidget {
                     child: Text(items[index][5]),
                   ),
                   title: Text(items[index]),
-                  subtitle: Text(numbersListItemSubtitle + items[index].toString(),),
+                  subtitle: Text(
+                    numbersListItemSubtitle + items[index].toString(),
+                  ),
                   trailing: Icon(Icons.arrow_forward),
                   onTap: () {
                     ScaffoldMessenger.of(context).showSnackBar(
-                        SnackBar(content: Text(numbersListSnackBarText + items[index].toString(),),),);
+                      SnackBar(
+                        content: Text(
+                          numbersListSnackBarText + items[index].toString(),
+                        ),
+                      ),
+                    );
                   }),
             ),
           ),

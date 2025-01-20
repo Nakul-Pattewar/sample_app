@@ -5,7 +5,6 @@ import 'package:sample_app/Provider/numbers_list_page_1.dart';
 import 'package:sample_app/main.dart';
 import 'package:sample_app/Widgets/second_page.dart';
 import 'package:sample_app/Widgets/SliverAppBar.dart';
-
 import '../Provider/numbers_list_page_2.dart';
 
 class RouteGenerator {

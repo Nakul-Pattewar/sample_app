@@ -11,4 +11,4 @@ const String randomPageTitle = "Random Page";
 const String sliverAppBarTitle = "Sliver App Bar";
 const String nextPageButtonText = 'next Page';
 const String sliverAppBarBackgroundText = 'Background';
-const String changeNotifierTitle = 'go to chnageNotifier';
+const String changeNotifierTitle = 'go to changeNotifier';
