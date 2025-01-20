@@ -61,6 +61,12 @@ class SecondRoute extends StatelessWidget {
             },
             child: const Text(numbersListPage2Title),
           ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.of(context).pushNamed("/changeNotifier");
+            },
+            child: const Text(changeNotifierTitle),
+          ),
         ]),
       ),
     );

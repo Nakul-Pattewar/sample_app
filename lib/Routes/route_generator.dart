@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sample_app/ChangeNotifier/change_notifier_page.dart';
 import 'package:sample_app/Constants/strings.dart';
 import 'package:sample_app/Provider/numbers_list_page_1.dart';
 import 'package:sample_app/main.dart';
@@ -36,6 +37,9 @@ class RouteGenerator {
         return MaterialPageRoute(
           builder: (_) => NumbersListPage2(),
         );
+      case '/changeNotifier':
+        return MaterialPageRoute(builder: (_) => ListListenableBuilder(),
+    );
       default:
         return _errorRoute();
     }
