@@ -8,6 +8,7 @@ class NumbersListPage2 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
     return Consumer<NumbersListProvider>(
         builder: (context, numbersListProviderModel, child) => Scaffold(
               appBar: AppBar(
@@ -17,9 +18,9 @@ class NumbersListPage2 extends StatelessWidget {
               body: Center(
                 child: Column(children: [
                   Container(
-                    height: MediaQuery.of(context).size.height * 0.8,
-                    padding: EdgeInsets.all(MediaQuery.of(context).size.height * 0.1),
-                    margin: EdgeInsets.all(MediaQuery.of(context).size.height * 0.1),
+                    height: size.height * 0.8,
+                    padding: EdgeInsets.all(10),
+                    margin: EdgeInsets.all(10),
                     child: ListView.builder(
                       itemCount: numbersListProviderModel.numbersList.length,
                       itemBuilder: (context, index) => ListTile(

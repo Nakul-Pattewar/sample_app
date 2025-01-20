@@ -1,6 +1,6 @@
 import 'package:flutter/widgets.dart';
 
-class ListModel with ChangeNotifier{
+class ListModel extends ChangeNotifier{
   final List<int> notifierList = [1,2,3];
 
   void addNumber(){
