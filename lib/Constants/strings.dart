@@ -12,3 +12,6 @@ const String sliverAppBarTitle = "Sliver App Bar";
 const String nextPageButtonText = 'next Page';
 const String sliverAppBarBackgroundText = 'Background';
 const String changeNotifierTitle = 'go to changeNotifier';
+const String blocPageTitle = 'bloc list ';
+const String blocListTitle = 'Numbers List using bloc :';
+const String blocSnackBarText = ' added to list';

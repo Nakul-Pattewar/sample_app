@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:sample_app/ChangeNotifier/change_notifier_page.dart';
 import 'package:sample_app/Constants/strings.dart';
 import 'package:sample_app/Provider/numbers_list_page_1.dart';
+import 'package:sample_app/bloc/list_ui/bloc_home.dart';
 import 'package:sample_app/main.dart';
 import 'package:sample_app/Widgets/second_page.dart';
 import 'package:sample_app/Widgets/SliverAppBar.dart';
@@ -37,12 +38,16 @@ class RouteGenerator {
           builder: (_) => NumbersListPage2(),
         );
       case '/changeNotifier':
-        return MaterialPageRoute(builder: (_) => ListListenableBuilder(),
-    );
+        return MaterialPageRoute(
+          builder: (_) => ListListenableBuilder(),
+        );
+      case '/blocList':
+        return MaterialPageRoute(
+          builder: (_) => BlocHome(),
+        );
       default:
         return _errorRoute();
     }
-    return _errorRoute();
   }
 
   static Route<dynamic> _errorRoute() {
