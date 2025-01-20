@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:sample_app/Constants/strings.dart';
 import 'list_model.dart';
 
-class ListListenableBuilder extends StatelessWidget {
-  ListListenableBuilder({super.key});
+class ListListenerBuilder extends StatelessWidget {
+  ListListenerBuilder({super.key});
 
   final ListModel _listNotifier = ListModel();
 

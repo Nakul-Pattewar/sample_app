@@ -39,7 +39,7 @@ class RouteGenerator {
         );
       case '/changeNotifier':
         return MaterialPageRoute(
-          builder: (_) => ListListenableBuilder(),
+          builder: (_) => ListListenerBuilder(),
         );
       case '/blocList':
         return MaterialPageRoute(
